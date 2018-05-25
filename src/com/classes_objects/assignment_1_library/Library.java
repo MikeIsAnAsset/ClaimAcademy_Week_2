@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-	private String name;
+	protected String name;
 	private String address;
 	private long phone;
 	private List<Book> libraryBookList = new ArrayList<Book>(); 
-	private List<Customer> customers = new ArrayList<Customer>();
+	protected List<Customer> customers = new ArrayList<Customer>();
 	
 	// constructor
 	public Library(String name, String address, long phone) {
@@ -63,6 +63,22 @@ public class Library {
 
 
 	
+	public List<Book> getLibraryBookList() {
+		return libraryBookList;
+	}
+
+	public void setLibraryBookList(List<Book> libraryBookList) {
+		this.libraryBookList = libraryBookList;
+	}
+
+	public List<Customer> getCustomers() {
+		return customers;
+	}
+
+	public void setCustomers(List<Customer> customers) {
+		this.customers = customers;
+	}
+
 	// Custom methods
 	// Add book to libraryBookList
 	public void addBookToLibraryBookList(Book book) {
@@ -85,8 +101,7 @@ public class Library {
 
 	@Override
 	public String toString() {
-		return "Library [name=" + name + ", address=" + address + ", phone=" + phone + ", libraryBookList="
-				+ libraryBookList + ", customers=" + customers + "]";
+		return "Library [name=" + name + ", address=" + address + ", phone=" + phone +"]";
 	}
 	
 	
