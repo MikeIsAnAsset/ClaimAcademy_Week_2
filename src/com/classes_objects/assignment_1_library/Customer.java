@@ -5,21 +5,38 @@ import java.util.List;
 
 public class Customer {
 	private String name;
-	private String address;
-	private long phone;
+	private Address address;
+	private String address2;
+	private String phone;
 	private List<Book> customerBooks=new ArrayList<Book>();
 	
-	public Customer(String name, String address, long phone) {
+	// Constructor using address
+	public Customer(String name, Address address, String phone) {
 		super();
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
 	}
 
-	public Customer(String name, String address) {
+	public Customer(String name, Address address) {
 		super();
 		this.name = name;
 		this.address = address;
+	}
+	
+	
+	// Constructor using address2
+	public Customer(String name, String address2, String phone) {
+		super();
+		this.name = name;
+		this.address2 = address2;
+		this.phone = phone;
+	}
+
+	public Customer(String name, String address2) {
+		super();
+		this.name = name;
+		this.address2 = address2;
 	}
 
 	/**
@@ -37,14 +54,14 @@ public class Customer {
 	/**
 	 * @return the address
 	 */
-	public String getAddress() {
-		return address;
+	public String getAddress2() {
+		return address2;
 	}
 	/**
 	 * @param address the address to set
 	 */
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddress(String address2) {
+		this.address2 = address2;
 	}
 	/**
 	 * @return the phone

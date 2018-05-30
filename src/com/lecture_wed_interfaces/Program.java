@@ -14,7 +14,9 @@ public class Program {
 		System.out.println(taxes);
 		
 		;
-		System.out.println(e1.testToBreak(125));
+//		System.out.println(e1.testToBreak(125));
+//		double result = s1.testToBreak(125);
+//		System.out.println(result);
 		System.out.println(s1.testToBreak(125));
 		
 		

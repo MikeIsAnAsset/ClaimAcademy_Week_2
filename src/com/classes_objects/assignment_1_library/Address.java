@@ -2,7 +2,7 @@ package com.classes_objects.assignment_1_library;
 
 public class Address {
 	private int streetNum;
-	private String Street;
+	private String street;
 	private String city;
 	private String state;	
 	private int zip;
@@ -10,7 +10,7 @@ public class Address {
 	public Address(int streetNum, String street, String city, String state, int zip) {
 		super();
 		this.streetNum = streetNum;
-		Street = street;
+		this.street = street;
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
@@ -25,11 +25,11 @@ public class Address {
 	}
 
 	public String getStreet() {
-		return Street;
+		return street;
 	}
 
 	public void setStreet(String street) {
-		Street = street;
+		this.street = street;
 	}
 
 	public String getCity() {
@@ -54,6 +54,13 @@ public class Address {
 
 	public void setZip(int zip) {
 		this.zip = zip;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [streetNum=" + streetNum + ", Street=" + street + ", city=" + city + ", state=" + state
+				+ ", zip=" + zip + ", getStreetNum()=" + getStreetNum() + ", getStreet()=" + getStreet()
+				+ ", getCity()=" + getCity() + ", getState()=" + getState() + ", getZip()=" + getZip() + "]";
 	}
 	
 

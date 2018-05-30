@@ -5,18 +5,24 @@ import java.util.List;
 
 public class Library {
 	protected String name;
-	private String address;
-	private long phone;
+	private Address address;
+	private String address2; //just for test purposes
+	private String phone;
 	private List<Book> libraryBookList = new ArrayList<Book>(); 
 	protected List<Customer> customers = new ArrayList<Customer>();
 	
 	// constructor
-	public Library(String name, String address, long phone) {
+	public Library(String name, Address address, String phone) {
 		super();
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
 	}
+
+	public Library(String name, String address2, String phone) {
+		this.name = name;
+		this.address2 = address2;
+		this.phone = phone;	}
 
 	// Getters and Setters
 	/**
@@ -36,15 +42,15 @@ public class Library {
 	/**
 	 * @return the address
 	 */
-	public String getAddress() {
-		return address;
+	public String getAddress2() {
+		return address2;
 	}
 
 	/**
 	 * @param address the address to set
 	 */
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddress2(String address2) {
+		this.address2 = address2;
 	}
 
 	/**
@@ -101,7 +107,7 @@ public class Library {
 
 	@Override
 	public String toString() {
-		return "Library [name=" + name + ", address=" + address + ", phone=" + phone +"]";
+		return "Library [name=" + name + ", address=" + address + ",  address2=" + address2 + "phone=" + phone +"]";
 	}
 	
 	

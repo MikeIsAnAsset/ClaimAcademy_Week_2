@@ -4,6 +4,7 @@ public class Book {
 	private String title, author;
 	private int isbn, numberOfPages, quantity;
 	private Library libraryBookIsAssociated;
+	private boolean checkedOut;
 	
 	
 	public Book(String author, int isbn, String title, int numberOfPages, int quantity, Library libraryBookIsAssociated) {
